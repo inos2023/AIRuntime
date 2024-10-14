@@ -1,0 +1,19 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "airuntime"
+crate-type = ["cdylib"]
+
+[dependencies]
+airuntime = {path = "../airuntime"}
+model = {path = "../model"}
+derive = {path = "../derive"}
+log.workspace = true
+
+[build-dependencies]
+cbindgen = "0.24.0"
