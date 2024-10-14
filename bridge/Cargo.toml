@@ -1,0 +1,20 @@
+[package]
+name = "bridge"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "bridge-sample"
+path = "src/bin/sample.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cxx = "1.0.97"
+model = {path = "../model"}
+thiserror.workspace = true
+log.workspace = true
+
+[build-dependencies]
+cxx-build = "1.0.97"
+cmake = "0.1.50"

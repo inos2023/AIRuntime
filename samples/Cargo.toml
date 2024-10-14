@@ -1,0 +1,16 @@
+[package]
+name = "samples"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log.workspaces=true
+anyhow.workspaces=true
+memmap2.workspaces=true
+airuntime = {path = "../airuntime",version="0.1.0"}
+image.workspace = true
+ndarray.workspace = true
+model = {path = "../model",version="0.1.0"}
+ndarray-npy.workspace = true

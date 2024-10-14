@@ -1,0 +1,25 @@
+[workspace]
+members = [
+    "airuntime",
+    "samples",
+    "bridge",
+    "derive",
+    "model",
+    "api"
+]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace.dependencies]
+log = "0.4.17"
+env_logger = "0.9"
+anyhow = "1.0.43"
+memmap2 = "0.5"
+prost = "0.11.0"
+ndarray = "0.15.3"
+thiserror = "1.0.40"
+image = "0.24.1"
+ndarray-npy = { version = "0.8.0", features = [ "compressed_npz" ] }
+
+
+
